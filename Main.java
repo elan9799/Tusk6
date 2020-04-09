@@ -57,9 +57,9 @@ public class Main {
         }
         String [] num;
         int [] num2 = new int[lenght];
+        num = aray.split(" ");
         for (int i = 0; i < lenght; i++) {
-            num = aray.split(" ");
-            num2[i] = Integer.parseInt(String.valueOf(num[i]));
+            num2[i] = Integer.parseInt((num[i]));
         }
         System.out.println(Arrays.toString(num2));
         for (int i = 0; i < lenght; i++) {
@@ -94,9 +94,9 @@ public class Main {
         }
         int num2[] = new int[lenght];
         int counter = 0;
+        num = ar.split(" ");
         for (int i = 0; i < lenght; i++) {
-            num = ar.split(" ");
-            num2[i] = Integer.parseInt(String.valueOf(num[i]));
+            num2[i] = Integer.parseInt((num[i]));
             if (num2[i] > 0){
                 counter += 1;
             }
